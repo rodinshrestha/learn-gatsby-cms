@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: rodinshrestha@gmail.com/learn-gatsby-cms
+  repo: rodinshrestha/learn-gatsby-cms
   branch: main
 
 publish_mode: editorial_workflow
@@ -8,12 +8,12 @@ media_folder: "public/assets/img"
 public_folder: "img"
 
 collections:
- - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "blog/_posts" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{day}}-{{month}}-{{year}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+  - name: "blog" 
+    label: "blog" 
+    folder: "blog/_posts" 
+    create: true 
+    slug: "{{day}}-{{month}}-{{year}}-{{slug}}" 
+    fields: 
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
