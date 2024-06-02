@@ -2,7 +2,10 @@ backend:
   name: github
   repo: rodinshrestha@gmail.com/learn-gatsby-cms
   branch: main
-  
+  media_folder: "static/images/uploads"
+  media_library:
+   name: uploads
+
 collections:
   - name: blog
     label: Blog
