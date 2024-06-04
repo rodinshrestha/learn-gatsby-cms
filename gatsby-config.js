@@ -9,6 +9,24 @@
  */
 
 module.exports = {
-  plugins: ['gatsby-plugin-netlify-cms'],
+  plugins: ['gatsby-plugin-netlify-cms', `gatsby-plugin-image`, {
+    resolve: 'gatsby-source-filesystem',
+    options:{
+      name: 'image',
+      path: `${__dirname}/src/images`
+    }
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options:{
+      name: 'navigation',
+      path: `${__dirname}/content`
+    }
+  },
+  {
+    resolve: 'gatsby-transformer-remark',
+    options:{ }
+  }
+],
 }
 

@@ -1,0 +1,15 @@
+.navigation-wrapper{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.link-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.link-item a:hover{
+    text-decoration: underline;
+    translate: .2s all ease-in;
+}

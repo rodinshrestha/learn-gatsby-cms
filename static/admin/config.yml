@@ -10,7 +10,7 @@ public_folder: "img"
 collections:
   - name: "Navigation" 
     label: "Navigation Menu" 
-    folder: "navigation" 
+    folder: "/content/navigation" 
     create: true 
     slug: "{{day}}-{{month}}-{{year}}-{{slug}}" 
     fields: 
